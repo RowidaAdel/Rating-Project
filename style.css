@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Light_grey: hsl(217, 12%, 63%);
+    --dark_gray: hsl(213, 19%, 22%);
+    --dark_blue: hsl(213, 19%, 18%);
+    --very_dark_blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+body,
+html {
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    background-color: var(--very_dark_blue) !important;
+    color: white;
+}
+
+.card {
+    background-color: var(--dark_blue) !important;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 120px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+#card__thanks{
+    display: none;
+}
+h2 {
+    color: var(--white);
+}
+
+p {
+    color: var(--Light_grey);
+}
+
+.card>figure>img {
+    border-radius: 50%;
+    background-color: var(--dark_gray);
+    padding: 15px;
+    margin: 10px 0;
+}
+
+h2,
+p,
+.card>figure>img {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:10px;
+    margin: 20px 0;
+}
+
+.rating button {
+    background-color: var(--dark_gray);
+    color: var(--Light_grey);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+
+.rating button:hover {
+    background-color: var(--orange);
+    color: white;
+}
+.rating button.selected{
+background-color: var(--white);
+color: black;
+}
+.submit-btn {
+    background-color: var(--orange);
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: var(--white);
+    color: black;
+}
+
+.rate {
+    background-color: var(--dark_gray);
+    color: var(--orange);
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+    padding-block: 0;
+    padding-inline: 0;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.thank {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+.card{
+    width:70%;
+}
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .card{
+        width:70%;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .card{
+        width:70%;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .card{
+        width:70%;
+    }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    .card{
+        width:70%;
+    }
+ }
